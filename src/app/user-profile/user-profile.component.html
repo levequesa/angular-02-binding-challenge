@@ -7,5 +7,6 @@
 <h3>Prénom (par interpollation) : {{user.firstName}}</h3>
 <input [(ngModel)]="user.quote" />
 <p>{{user.quote}}</p>
-
-<button (click)="AfficherAge">afficher/masquer mon âge</button>
+<br>
+<button (click)="onClickButton()">afficher/masquer mon âge</button>
+<p [hidden]="hiddenAtt"> {{user.age}}</p>

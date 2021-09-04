@@ -20,7 +20,10 @@ export class UserProfileComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  AfficherAge (){
+  hiddenAtt : boolean = false;
+
+  onClickButton (){
+    this.hiddenAtt = !this.hiddenAtt;
     console.log("age : this.user.age");
   }
 }
